@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "grid nome"
+    "grid sort";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    width: 100vw;
+    height: 100vh;
+    background-color: #83BF00;
+}
+
+div.container>div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    grid-area: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px ;
+}
+
+.nome {
+    grid-area: nome;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.sort {
+    grid-area: sort;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    display: grid;
+    grid-template-areas: 
+    "tit"
+    "poke"
+    "bots";
+    grid-template-rows: 1fr 2fr 1fr;
+    width: 100%;
+    height: 100%;
+    margin-top: -30vh;
+}
+
+.tit {
+    grid-area: tit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poke {
+    grid-area: poke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bots {
+    grid-area: bots;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 20%;
+    height: 40%;
+    background-color: #ffcc03;
+    border-color: rgb(32, 32, 255);
+    border-radius: 1vw;
+    font-family: 'Press Start 2P';
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px grey;
+    color: rgb(32, 32, 255);
+}
+button:hover {
+    box-shadow: none;
+}
+
+table, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+tr, td {
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    height: 70%;
+}
+
+.pokeball {
+    width: 50%;
+    height: 70%;
+}
